@@ -21,7 +21,14 @@ For this we have chnaged the port numbers, our news front will communicate to th
 
 <h2 id="2.2.React">2.1.GitHub repo 2</h2>
 
+Commands ran once we had created our new repo and need to update
 
+command:
+git status                   # Check the status
+git add app.js style.css      # Add only the modified files
+git commit -m "Updated app functionality and CSS"   # Commit with a message
+git push origin master        # Push the changes
+<br>
 
 <h1 id="3.Implementation">3.implementation</h1>
 
