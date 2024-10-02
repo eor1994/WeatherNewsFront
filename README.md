@@ -23,11 +23,11 @@ For this we have chnaged the port numbers, our news front will communicate to th
 
 Commands ran once we had created our new repo and need to update
 
-command:
-git status                   # Check the status
-git add app.js style.css      # Add only the modified files
-git commit -m "Updated app functionality and CSS"   # Commit with a message
-git push origin master        # Push the changes
+command:<br>
+git status                   # Check the status<br>
+git add app.js style.css      # Add only the modified files<br>
+git commit -m "Updated app functionality and CSS"   # Commit with a message<br>
+git push origin master        # Push the changes<br>
 <br>
 
 <h1 id="3.Implementation">3.implementation</h1>
