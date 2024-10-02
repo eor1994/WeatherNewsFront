@@ -1,4 +1,6 @@
 import React, { useState } from 'react';//manage component state
+//import google maps
+import Map from './Map'; // Import the Map component
 import './App.css';
 
 function App() {
@@ -7,6 +9,10 @@ function App() {
   const [countryCode, setCountryCode] = useState('');
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState('');
+
+  //map section 
+  const [lat, setLat] = useState(40.712776); // Default latitude
+  const [lng, setLng] = useState(-74.005974); // Default longitude
   
   //this changes the value to search 
   const handleCityChange = (e) => {
@@ -73,9 +79,15 @@ function App() {
         )}
       {/* Step 8: Display error messages if any */}
       {error && <p className="error-message">{error}</p>}
+      
+      <h2>Google Maps in React</h2>
 
-
+      {/* Render the Map component and pass lat/lng as props */}
+      <Map lat={weatherData.latitude} lng={weatherData.longitude} />
+    
+      
       </header>
+
     </div>
   );
 }
